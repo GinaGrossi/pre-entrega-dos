@@ -1,0 +1,594 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos de pantalla de tablet y escritorio*/
+
+@media screen and (min-width: 602px) {
+    
+body{
+    height: 800px;
+    background-image:url(../IIMG/FONDO\ LOCAL.png);
+    background-repeat: repeat;
+    background-size:cover;
+    font-family: 'Secular One', sans-serif;
+    
+}
+
+.contenedor-header{
+
+    padding: 30px;
+    color:black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 4fr 1fr 7fr;
+    grid-template-rows:70px 70px;
+    grid-template-areas:
+    "titulo boton menu"
+    "titulo navbar menu";
+    align-items: center;
+   
+}
+
+.contenedor-index{
+
+    padding: 30px;
+    color:black;
+    text-align: center;
+
+}
+
+.titulo{
+    padding: 10px;
+    font-size: 4rem;
+    text-shadow: -4px 4px 3px rgb(55, 55, 55);
+    -webkit-text-stroke: 0.5px white;
+    grid-area: titulo; 
+
+
+}
+
+.logo{
+    height: 3rem;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.slogan{
+    padding: 10px;
+    font-size: 1,5rem;
+    -webkit-text-stroke: 0.5px white;
+}
+
+
+/* redes sociales */
+
+.img{
+    width: 20px; 
+    padding: 3px;
+}
+
+.img:hover{
+   transform: scale(1.7);
+}
+
+/* boton reservar */
+
+.boton{
+    padding: 6px;
+    margin: 8px;
+    box-shadow: -3px 4px 3px rgb(40, 40, 40);;
+    border-radius: 8px;
+    border-width: 3px;
+    background-color: rgb(232, 226, 226);
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    grid-area: boton;
+
+}
+
+.boton:hover{
+    transform: scale(1.1);
+}
+
+
+/* menu navegacion */
+
+.menupadre{
+
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: menu;
+
+}
+
+
+.menupadre-hijo{
+    list-style: none;
+    color: white;
+    gap: 7rem;
+    display: flex;
+
+
+}
+
+
+.menupadre-hijodos{
+    padding: 15px;
+    background-image: radial-gradient(rgb(23, 22, 22),black);
+    color: white;
+    box-shadow: -3px 4px 3px rgb(20, 20, 20);
+    border-radius: 40px;
+    border: solid 1px white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    
+
+}
+
+
+.menupadre-hijodos a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menupadre-hijodos:hover{
+    transform: scale(1.1);
+
+}
+
+
+/* estilos para pagina reserva */
+
+
+.reserva{   
+    margin-top: 44px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.reserva__casillero{
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;    
+    border: 3px aliceblue solid;
+
+}
+
+.reserva__casillero-items{
+    padding: 10px;
+
+}
+.reserva__casillero-items input{
+    margin-left: 34px;
+
+}
+
+.reserva__casillero-enviar{
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+legend{
+    padding: 15px;
+    text-transform: uppercase;
+    color: aliceblue;
+
+}
+.navbar{
+    justify-content: center;
+    margin-bottom: 30px;
+    grid-area: navbar;
+}
+
+.navbar:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* nuestra historia */
+
+
+.historia{
+
+    margin: 45px 150px;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.hitoria__p{
+    color: white;
+    padding: 25px;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+    
+}
+
+
+/* carta de bebidas */
+
+.fondo-alimentos{
+    background-image: url(../IIMG/FONDO\ LOCAL.png);
+    background-repeat: repeat;
+    background-size: cover; 
+    
+}
+
+body main div img{
+    height: 250px;
+
+}
+
+.bebidas{
+    margin-top: 45px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: aliceblue;
+
+}
+
+.bebidas img{
+    border: solid 4px black;
+}
+
+.bebidas__texto{
+    background-color: black;
+    width: 400px;
+    padding: 50px;
+    margin-left: 20px;
+
+}
+
+
+/* carta de comida */
+
+.comida{
+    margin-top: 45px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: aliceblue;
+
+}
+
+.comida img{
+    border: solid 4px black;
+}
+
+.comida__texto{
+    background-color: black;
+    width: 400px;
+    padding: 50px;
+    margin-left: 20px;
+
+}
+
+
+/* estilos de footer */
+
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    margin-top: 150px;
+    padding: 8px;
+    text-align: center;
+
+}
+
+
+}
+
+/* estilos de pantalla de celulares*/
+
+@media screen and (max-width: 600px){
+    
+
+    
+    body{
+        height: 300px;
+        background-image:url(../IIMG/FONDO\ LOCAL.png);
+        background-repeat: repeat;
+        background-size:cover;
+        font-family: 'Secular One', sans-serif;
+        
+    }
+    
+    .contenedor-header{
+    
+        padding: 20px;
+        color:black;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+    
+
+       
+    }
+    
+    .contenedor-index{
+    
+        padding: 10px;
+        color:black;
+        text-align: center;
+    
+    }
+    
+    .titulo{
+        padding: 8px;
+        font-size: 3rem;
+        text-shadow: -4px 4px 3px rgb(55, 55, 55);
+        -webkit-text-stroke: 0.5px white;
+        grid-area: titulo; 
+    
+    
+    }
+    
+    .logo{
+        height: 2rem;
+    }
+    
+    .logo:hover{
+        transform: scale(1.1);
+    }
+    
+    .slogan{
+        padding: 7px;
+        font-size: 1rem;
+        -webkit-text-stroke: 0.1px white;
+    }
+    
+    
+    /* redes sociales */
+    
+    .img{
+        width: 15px; 
+        padding: 2px;
+    }
+    
+    .img:hover{
+       transform: scale(1.7);
+    }
+    
+    /* boton reservar */
+    
+
+    .boton{
+        padding: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: -3px 4px 3px rgb(40, 40, 40);
+        border-radius: 8px;
+        border-width: 1px;
+        background-color: rgb(232, 226, 226);
+        grid-area: boton;
+        
+
+    }
+    
+    .boton:hover{
+        transform: scale(1.1);
+    }
+    
+    
+    /* menu navegacion */
+    
+    .menupadre{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: menu;
+    
+    }
+    
+    
+    .menupadre-hijo{
+        list-style: none;
+        color: white;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    
+    .menupadre-hijodos{
+        padding: 5px;
+        background-image: radial-gradient(rgb(23, 22, 22),black);
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        box-shadow: -3px 4px 3px rgb(20, 20, 20);
+        border-radius: 40px;
+        border: solid 1px white;
+        font-family: 'Secular One', sans-serif;
+        font-weight: bold;
+    
+    
+    }
+    
+    .menupadre-hijodos:hover{
+        transform: scale(1.1);
+    
+    }
+    
+    
+    /* estilos para pagina reserva */
+    
+    
+    .reserva{   
+        margin-top: 4px;
+        color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+    
+    }
+    
+    .reserva__casillero{
+        background-color: black;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;    
+        border: 2px aliceblue solid;
+    
+    }
+    
+    .reserva__casillero-items{
+        padding: 5px;
+    
+    }
+    .reserva__casillero-items input{
+        margin-left: 10px;
+    
+    }
+    
+    .reserva__casillero-enviar{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    
+    }
+    
+    legend{
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: aliceblue;
+    
+    }
+    .navbar{
+        justify-content: center;
+        grid-area: navbar;
+    
+    }
+    
+    .navbar:hover{
+        transform: scale(1.1);
+    }
+    .navbar img{
+        width: 40px;
+        height: 40px;
+
+    
+    }
+    
+    
+    /* nuestra historia */
+    
+    
+    .historia{
+        margin: 5px 10px;
+        border: 1px solid white;
+        background-color: black;
+    
+    }
+    
+    .hitoria__p{
+        color: white;
+        padding: 15px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        
+    }
+    
+    
+    /* carta de bebidas */
+    
+    .fondo-alimentos{
+        background-image: url(../IIMG/FONDO\ LOCAL.png);
+        background-repeat: repeat;
+        background-size: cover; 
+        
+    }
+    
+    body main div img{
+        width: 200px;
+    
+    }
+    
+    .bebidas{
+  
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: aliceblue;
+    
+    }
+    
+    .bebidas img{
+        border: solid 2px black;
+    }
+    
+    .bebidas__texto{
+        background-color: black;
+        width: 200px;
+        padding: 10px;
+        font-size: 12px;
+    
+    }
+    
+    
+    /* carta de comida */
+    
+    .comida{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+    
+    .comida img{
+        border: solid 3px black;
+    }
+    
+    .comida__texto{
+        background-color: black;
+        width: 200px;
+        padding: 10px;
+        font-size: 12px;
+    
+    }
+    
+    
+    /* estilos de footer */
+    
+    .footer{
+        background-color: black;
+        color: white;
+        font-size: 0.5rem;
+        margin-top: 100px;
+        padding: 5px;
+        text-align: center;
+    
+    }
+    
+    
+    }
+    
+
